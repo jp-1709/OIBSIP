@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head lang="eng">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <form id="tempcal" onsubmit="calculateTemp(); return false">
+        <label for="temprature">Please enter the temprature you'd like to convert</label><br>
+        <input type="number" name="temp" id="temp">
+
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">℃elcius</option>
+            <option value="fah">°Fahrenhit</option>
+        </select><br>
+        <input type="submit" name="temp"><br>
+        <span id="resultContainer"></span></span>
+
+    </form>
+     
+    <script src="script.js"></script>
+</body>
